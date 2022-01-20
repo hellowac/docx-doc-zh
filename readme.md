@@ -2,6 +2,8 @@
 
 **python-docx库** 是一个用于`创建`和`更新` **Microsoft Word（.docx）** 文件的`Python库`。
 
+去查看翻译的[中文文档](https://hellowac.github.io/docx_doc/index.html)
+
 ## python-docx文档
 
 * 参考原文: <https://python-docx.readthedocs.io/en/latest/index.html> - 官网
@@ -31,5 +33,3 @@
 * [python-docx页面设置](https://baijiahao.baidu.com/s?id=1664903484937508104)
 * [python-docx指定页面设置成横向](https://baijiahao.baidu.com/s?id=1665028380582245274)
 * [python-docx设置页眉和页脚](https://baijiahao.baidu.com/s?id=1665454009794833226)
-
-[去查看文档](./index.html)
