@@ -1,0 +1,1 @@
+# InlineShape对象

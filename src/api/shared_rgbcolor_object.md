@@ -1,0 +1,1 @@
+# RGBColor对象

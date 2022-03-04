@@ -1,0 +1,1 @@
+# MSO_COLOR_TYPE

@@ -1,0 +1,1 @@
+# ColorFormat对象
