@@ -45,7 +45,7 @@
   - [Sesiont对象](./api/section_object.md)
     - [Sections对象](./api/section_sections_object.md)
     - [Section对象](./api/section_section.md)
-    - [_Header和_Footer对象](./api/section_header_footer对象)
+    - [_Header和_Footer对象](./api/section_header_footer.md)
   - [Shape相关对象](./api/shapes_related_object.md)
     - [InlineShapes对象](./api/shapes_inline_shapes.md)
     - [InlineShape对象](./api/shapes_inline_shape.md)

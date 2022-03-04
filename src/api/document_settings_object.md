@@ -8,11 +8,11 @@
 
 使用 [Document.settings] 属性访问。
 
-- **element**
+- **element** <a name="element"></a>
 
     此对象代理的 lxml 元素。
 
-- **odd_and_even_pages_header_footer**
+- **odd_and_even_pages_header_footer** <a name="odd_and_even_pages_header_footer"></a>
 
     如果此文档具有明显的奇数页和偶数页页眉和页脚，则为`True`。
 
