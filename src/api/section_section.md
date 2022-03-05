@@ -1,8 +1,8 @@
 # Section对象
 
 [Length]: ../api/shared_length_object.md
-[_Footer]: ../api/section_header_footer.md#Footer
-[_Header]: ../api/section_header_footer.md#Header
+[_Header]: ../api/section_header.md
+[_Footer]: ../api/section_footer.md
 [odd_and_even_pages_header_footer]: ../api/document_settings_object.md#odd_and_even_pages_header_footer
 [WD_SECTION_START]: ../api/enum_wd_section_start.md
 [WD_ORIENTATION]: ../api/enum_wd_orientation.md
