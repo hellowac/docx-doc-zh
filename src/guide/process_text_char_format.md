@@ -1,5 +1,9 @@
 # 应用字符格式
 
+[Run]: ../api/text_run_object.md
+[Font]: ../api/text_font_object.md
+[WD_UNDERLINE]: ../api/enum_wd_underline.md
+
 字符格式应用于运行级别。 示例包括字体字体和大小、粗体、斜体和下划线。
 
 [Run] 对象具有只读字体属性，提供对 [Font] 对象的访问。 运行的 [Font] 对象提供了用于获取和设置运行的字符格式的属性。

@@ -1,5 +1,14 @@
 # 字体颜色
 
+[Font]: ../api/text_font_object.md
+[ColorFormat]: ../api/drawing_color_format.md
+[MSO_THEME_COLOR_INDEX]: ../api/enum_mso_theme_color_index.md
+[rgb]: ../api/drawing_color_format.md#rgb
+[theme_color]: ../api/drawing_color_format.md#theme_color
+[type]: ../api/drawing_color_format.md#type
+[MSO_COLOR_TYPE]: ../api/enum_mso_color_type.md
+[RGBColor]: ../api/shared_rgbcolor_object.md
+
 每个 [Font] 对象都有一个 [ColorFormat] 对象，该对象提供对其颜色的访问，通过其只读颜色属性访问。
 
 将特定的 RGB 颜色应用于字体：

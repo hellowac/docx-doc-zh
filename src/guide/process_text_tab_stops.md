@@ -1,5 +1,13 @@
 # 制表位
 
+[ParagraphFormat]: ../api/text_paragraph_format.md
+[tab_stops]: ../api/text_paragraph_format.md#tab_stops
+[TabStops]: ../api/text_tab_stops_object.md
+[add_tab_stop()]: ../api/text_tab_stops_object.md#add_tab_stop
+[WD_TAB_ALIGNMENT]: ../api/enum_wd_tab_alignment.md
+[WD_TAB_LEADER]: ../api/enum_wd_tab_leader.md
+[TabStop]: ../api/text_tab_stop_object.md
+
 制表位决定段落文本中制表符的呈现方式。特别是，它指定制表符后面的文本将开始的位置，它将如何与该位置对齐，以及一个可选的前导符，它将填充制表符跨越的水平空间。
 
 段落或样式的制表位包含在使用 [ParagraphFormat] 上的 [tab_stops] 属性访问的 [TabStops] 对象中：

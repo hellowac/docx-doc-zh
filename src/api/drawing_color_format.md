@@ -8,7 +8,7 @@
 
 提供对颜色设置的访问，例如 RGB 颜色、主题颜色和亮度调整。
 
-- **rgb**
+- **rgb** <a name="rgb"></a>
 
     如果未指定 RGB 颜色，则为 [RGBColor] 值或 `None`。
 
@@ -16,12 +16,12 @@
 
     分配 [RGBColor] 值会导致类型变为 `MSO_COLOR_TYPE.RGB` 并删除任何主题颜色。 分配 `None` 会导致删除任何颜色，以便从样式层次结构继承有效颜色。
 
-- **theme_color**
+- **theme_color**  <a name="theme_color"></a>
 
     如果未指定主题颜色，则为[MSO_THEME_COLOR_INDEX]的成员 或 `None` 。 当 `type` 为 `MSO_COLOR_TYPE.THEME` 时，此属性的值将始终是 [MSO_THEME_COLOR_INDEX] 的成员。 当 `type` 有任何其他值时，此属性的值为 `None`。
 
     分配 `MSO_THEME_COLOR_INDEX` 的成员会导致类型变为 `MSO_COLOR_TYPE.THEME`。 任何现有的 RGB 值都会保留，但会被 Word 忽略。 分配 `None` 会导致删除任何颜色规范，以便从样式层次结构继承有效颜色。
 
-- **type**
+- **type**  <a name="type"></a>
 
     只读。 [MSO_COLOR_TYPE] 的成员，`RGB`、`THEME` 或 `AUTO` 之一，对应于定义此颜色的方式。 如果在此级别未应用颜色，则其值为 `None`，这会导致从样式层次结构继承有效颜色。

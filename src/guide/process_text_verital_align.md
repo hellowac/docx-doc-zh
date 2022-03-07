@@ -1,5 +1,7 @@
 # 水平对齐（对齐）
 
+[WD_PARAGRAPH_ALIGNMENT]: ../api/enum_wd_paragraph_alignment.md
+
 也称为对齐，段落的水平对齐方式可以设置为`左对齐`、`居中对齐`、`右对齐`或`完全对齐`（左右对齐），使用枚举值 [WD_PARAGRAPH_ALIGNMENT] 中的值：
 
 ```python

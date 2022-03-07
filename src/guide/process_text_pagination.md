@@ -1,5 +1,10 @@
 # 分页属性
 
+[keep_together]: ../api/text_paragraph_format.md#keep_together
+[keep_with_next]: ../api/text_paragraph_format.md#keep_with_next
+[page_break_before]: ../api/text_paragraph_format.md#page_break_before
+[widow_control]: ../api/text_paragraph_format.md#widow_control
+
 四个段落属性，[keep_together]、[keep_with_next]、[page_break_before] 和 [widow_control] 控制段落在页面边界附近的行为方式。
 
 - [keep_together] 导致整个段落出现在同一页面上，如果它会在两页之间被打破，则在段落之前发出分页符。

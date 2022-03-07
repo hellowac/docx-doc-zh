@@ -2,6 +2,9 @@
 
 [Length]: ../api/shared_length_object.md
 [Inches]: ../api/shared_inches_object.md
+[Pt]: ../api/shared_pt_object.md
+[Cm]: ../api/shared_cm_object.md
+[first_line_indent]: ../api/text_paragraph_format.md#first_line_indent
 
 缩进是段落与其容器边缘之间的水平空间，通常是页边距。段落可以在左侧和右侧分别缩进。第一行也可以有与段落其余部分不同的缩进。比段落其余部分缩进的第一行具有首行缩进。缩进较少的第一行有一个`悬挂缩进`。
 
