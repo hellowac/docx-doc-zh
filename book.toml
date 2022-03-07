@@ -10,3 +10,7 @@ build-dir = "docs"
 
 [output.html]
 no-section-label = true
+
+[output.html.fold]
+enable=true
+level=0
