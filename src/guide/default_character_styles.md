@@ -1,4 +1,11 @@
+- [默认模板中的字符样式](#默认模板中的字符样式)
+  - [文本](#文本)
+  - [标题](#标题)
+  - [其他](#其他)
+
 # 默认模板中的字符样式
+
+## 文本
 
 - Body Text Char
 
@@ -23,6 +30,8 @@
 - Emphasis
 
     重点
+
+## 标题
 
 - Heading 1 Char
 
@@ -60,6 +69,20 @@
 
     标题字符 9
 
+- Strong
+
+    粗体
+
+- Title Char
+
+    标题字符
+
+- Subtitle Char
+
+    子标题字符
+
+## 其他
+
 - Intense Emphasis
 
     强烈强调
@@ -80,14 +103,6 @@
 
     引用字符
 
-- Strong
-
-    粗体
-
-- Subtitle Char
-
-    子标题字符
-
 - Subtle Emphasis
 
     微弱强调
@@ -95,7 +110,3 @@
 - Subtle Reference
 
     微弱引用
-
-- Title Char
-
-    标题字符

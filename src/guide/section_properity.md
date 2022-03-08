@@ -10,11 +10,11 @@
 [start_type]: ../api/section_section.md#start_type
 [WD_SECTION_START]: ../api/enum_wd_section_start.md
 
-该[Section]对象有十一个属性，允许发现和指定页面布局设置。
+该[Section]对象有十一个属性，允许查找和指定页面布局设置。
 
 ## Section 开始类型
 
-[Section.start_type]描述该部分之前的中断类型：
+[Section.start_type]描述该[Section]之前的中断类型：
 
 ```python
 >>> section.start_type

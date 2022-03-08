@@ -749,9 +749,9 @@ NEW_PAGE (2)
 EVEN_PAGE (3)
 ODD_PAGE (4)
 </code></pre>
-<p>从理论上讲，文档可能没有任何明确的部分，尽管我还没有看到这种情况发生。 如果您正在访问不可预测的 <code>.docx</code> 文件，您可能需要使用 <code>len()</code> 检查或 <code>try</code> 块来提供这种可能性，以避免未捕获的 <code>IndexError</code> 异常停止您的程序。</p>
+<p>从理论上讲，文档可能没有任何明确的<code>section</code>，尽管我还没有看到这种情况发生。 如果您正在访问不可预测的 <code>.docx</code> 文件，您可能需要使用 <code>len()</code> 检查或 <code>try</code> 块来提供这种可能性，以避免未捕获的 <code>IndexError</code> 异常停止您的程序。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="添加section"><a class="header" href="#添加section">添加Section</a></h1>
-<p>该 <a href="guide/../api/document.html#add_section">Document.add_section()</a>方法允许在文档末尾开始一个新<a href="guide/../api/section_section.html">Section</a>。调用此方法后添加的段落和表格将出现在新的部分中：</p>
+<p>该 <a href="guide/../api/document.html#add_section">Document.add_section()</a>方法允许在文档末尾开始一个新<a href="guide/../api/section_section.html">Section</a>。调用此方法后添加的段落和表格将出现在新的<a href="guide/../api/section_section.html">Section</a>中：</p>
 <pre><code class="language-python">&gt;&gt;&gt; current_section = document.sections[-1]  # last section in document
 &gt;&gt;&gt; current_section.start_type
 NEW_PAGE (2)
@@ -769,9 +769,9 @@ ODD_PAGE (4)
 </li>
 </ul>
 <h1 id="section属性"><a class="header" href="#section属性">Section属性</a></h1>
-<p>该<a href="guide/../api/section_section.html">Section</a>对象有十一个属性，允许发现和指定页面布局设置。</p>
+<p>该<a href="guide/../api/section_section.html">Section</a>对象有十一个属性，允许查找和指定页面布局设置。</p>
 <h2 id="section-开始类型"><a class="header" href="#section-开始类型">Section 开始类型</a></h2>
-<p><a href="guide/../api/section_section.html#start_type">Section.start_type</a>描述该部分之前的中断类型：</p>
+<p><a href="guide/../api/section_section.html#start_type">Section.start_type</a>描述该<a href="guide/../api/section_section.html">Section</a>之前的中断类型：</p>
 <pre><code class="language-python">&gt;&gt;&gt; section.start_type
 NEW_PAGE (2)
 &gt;&gt;&gt; section.start_type = WD_SECTION.ODD_PAGE
@@ -971,7 +971,19 @@ False
 <p>只有内置样式才需要潜在样式定义，因为只有内置样式才能出现在 <code>UI</code> 中，而 <code>style.xml</code> 中没有样式定义。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="样式继承"><a class="header" href="#样式继承">样式继承</a></h1>
 <p>一个样式可以从另一个样式继承属性，有点类似于层叠样式表 (CSS) 的工作方式。 使用 <code>base_style</code> 属性指定继承。 通过将一种风格建立在另一种风格上，可以形成任意深度的继承层次结构。 没有基本样式的样式会从文档默认值继承属性。</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="默认模板中的段落样式"><a class="header" href="#默认模板中的段落样式">默认模板中的段落样式</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><ul>
+<li><a href="guide/default_paragraph_styles.html#%E9%BB%98%E8%AE%A4%E6%A8%A1%E6%9D%BF%E4%B8%AD%E7%9A%84%E6%AE%B5%E8%90%BD%E6%A0%B7%E5%BC%8F">默认模板中的段落样式</a>
+<ul>
+<li><a href="guide/default_paragraph_styles.html#%E6%96%87%E6%9C%AC">文本</a></li>
+<li><a href="guide/default_paragraph_styles.html#%E6%A0%87%E9%A2%98">标题</a></li>
+<li><a href="guide/default_paragraph_styles.html#%E5%88%97%E8%A1%A8">列表</a></li>
+<li><a href="guide/default_paragraph_styles.html#%E5%BC%95%E7%94%A8">引用</a></li>
+<li><a href="guide/default_paragraph_styles.html#%E5%85%B6%E4%BB%96">其他</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="默认模板中的段落样式"><a class="header" href="#默认模板中的段落样式">默认模板中的段落样式</a></h1>
+<h2 id="文本"><a class="header" href="#文本">文本</a></h2>
 <ul>
 <li>
 <p>Normal</p>
@@ -989,9 +1001,24 @@ False
 <p>Body Text 3</p>
 <p>正文 3</p>
 </li>
+</ul>
+<h2 id="标题"><a class="header" href="#标题">标题</a></h2>
+<ul>
 <li>
 <p>Caption</p>
 <p>标题</p>
+</li>
+<li>
+<p>Title</p>
+<p>标题</p>
+</li>
+<li>
+<p>TOCHeading</p>
+<p>目录标题</p>
+</li>
+<li>
+<p>Subtitle</p>
+<p>子标题</p>
 </li>
 <li>
 <p>Heading 1</p>
@@ -1029,10 +1056,9 @@ False
 <p>Heading 9</p>
 <p>标题 9</p>
 </li>
-<li>
-<p>Intense Quote</p>
-<p>强调引用</p>
-</li>
+</ul>
+<h2 id="列表"><a class="header" href="#列表">列表</a></h2>
+<ul>
 <li>
 <p>List</p>
 <p>列表</p>
@@ -1085,6 +1111,20 @@ False
 <p>List Paragraph</p>
 <p>列表段落</p>
 </li>
+</ul>
+<h2 id="引用"><a class="header" href="#引用">引用</a></h2>
+<ul>
+<li>
+<p>Quote</p>
+<p>引用</p>
+</li>
+<li>
+<p>Intense Quote</p>
+<p>强调引用</p>
+</li>
+</ul>
+<h2 id="其他"><a class="header" href="#其他">其他</a></h2>
+<ul>
 <li>
 <p>Macro Text</p>
 <p>宏文本</p>
@@ -1093,24 +1133,18 @@ False
 <p>No Spacing</p>
 <p>无间距</p>
 </li>
-<li>
-<p>Quote</p>
-<p>引用</p>
-</li>
-<li>
-<p>Subtitle</p>
-<p>子标题</p>
-</li>
-<li>
-<p>TOCHeading</p>
-<p>目录标题</p>
-</li>
-<li>
-<p>Title</p>
-<p>标题</p>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><ul>
+<li><a href="guide/default_character_styles.html#%E9%BB%98%E8%AE%A4%E6%A8%A1%E6%9D%BF%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E6%A0%B7%E5%BC%8F">默认模板中的字符样式</a>
+<ul>
+<li><a href="guide/default_character_styles.html#%E6%96%87%E6%9C%AC">文本</a></li>
+<li><a href="guide/default_character_styles.html#%E6%A0%87%E9%A2%98">标题</a></li>
+<li><a href="guide/default_character_styles.html#%E5%85%B6%E4%BB%96">其他</a></li>
+</ul>
 </li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="默认模板中的字符样式"><a class="header" href="#默认模板中的字符样式">默认模板中的字符样式</a></h1>
+<h1 id="默认模板中的字符样式"><a class="header" href="#默认模板中的字符样式">默认模板中的字符样式</a></h1>
+<h2 id="文本-1"><a class="header" href="#文本-1">文本</a></h2>
 <ul>
 <li>
 <p>Body Text Char</p>
@@ -1136,6 +1170,9 @@ False
 <p>Emphasis</p>
 <p>重点</p>
 </li>
+</ul>
+<h2 id="标题-1"><a class="header" href="#标题-1">标题</a></h2>
+<ul>
 <li>
 <p>Heading 1 Char</p>
 <p>标题字符 1</p>
@@ -1173,6 +1210,21 @@ False
 <p>标题字符 9</p>
 </li>
 <li>
+<p>Strong</p>
+<p>粗体</p>
+</li>
+<li>
+<p>Title Char</p>
+<p>标题字符</p>
+</li>
+<li>
+<p>Subtitle Char</p>
+<p>子标题字符</p>
+</li>
+</ul>
+<h2 id="其他-1"><a class="header" href="#其他-1">其他</a></h2>
+<ul>
+<li>
 <p>Intense Emphasis</p>
 <p>强烈强调</p>
 </li>
@@ -1193,24 +1245,12 @@ False
 <p>引用字符</p>
 </li>
 <li>
-<p>Strong</p>
-<p>粗体</p>
-</li>
-<li>
-<p>Subtitle Char</p>
-<p>子标题字符</p>
-</li>
-<li>
 <p>Subtle Emphasis</p>
 <p>微弱强调</p>
 </li>
 <li>
 <p>Subtle Reference</p>
 <p>微弱引用</p>
-</li>
-<li>
-<p>Title Char</p>
-<p>标题字符</p>
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><ul>
@@ -3477,7 +3517,7 @@ style = styles[WD_STYLE.BODY_TEXT]
 <p>脚注文本.</p>
 </li>
 </ul>
-<h2 id="标题"><a class="header" href="#标题">标题</a></h2>
+<h2 id="标题-2"><a class="header" href="#标题-2">标题</a></h2>
 <ul>
 <li>
 <p><strong>HEADER</strong></p>
@@ -3637,7 +3677,7 @@ style = styles[WD_STYLE.BODY_TEXT]
 <p>电话号码。</p>
 </li>
 </ul>
-<h2 id="列表"><a class="header" href="#列表">列表</a></h2>
+<h2 id="列表-1"><a class="header" href="#列表-1">列表</a></h2>
 <ul>
 <li>
 <p><strong>LIST</strong></p>
@@ -3895,7 +3935,7 @@ style = styles[WD_STYLE.BODY_TEXT]
 <p>图表.</p>
 </li>
 </ul>
-<h2 id="标题-1"><a class="header" href="#标题-1">标题</a></h2>
+<h2 id="标题-3"><a class="header" href="#标题-3">标题</a></h2>
 <ul>
 <li>
 <p><strong>TITLE</strong></p>
